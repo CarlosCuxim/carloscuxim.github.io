@@ -2,13 +2,13 @@ import type { SiteConfig } from '~/types'
 
 const config: SiteConfig = {
   // Absolute URL to the root of your published site, used for generating links and sitemaps.
-  site: 'https://carloscuxim.github.io',
+  site: 'https://blog.cuxim.com',
   // The name of your site, used in the title and for SEO.
   title: 'Qxim Blog',
   // The description of your site, used for SEO and RSS feed.
-  description: 'Blog personal donde guardar todos mis pensamientos random',
+  description: 'Personal blog where I save all my random thougths',
   // The author of the site, used in the footer, SEO, and RSS feed.
-  author: 'qxim',
+  author: 'Carlos Cuxim',
   // Keywords for SEO, used in the meta tags.
   tags: ['blog'],
   // Path to the image used for generating social media previews.
@@ -146,7 +146,7 @@ const config: SiteConfig = {
   },
   // Social links to display in the footer.
   socialLinks: {
-    github: 'https://github.com/CarlosCuxim/Tesis-Maestria.git',
+    github: 'https://github.com/CarlosCuxim',
     email: 'carlos.cuxim@gmail.com',
     rss: true, // Set to true to include an RSS feed link in the footer
   },

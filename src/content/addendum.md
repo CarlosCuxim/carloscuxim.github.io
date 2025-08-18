@@ -1,7 +1,7 @@
 ---
 avatarImage:
   src: './avatar.jpg'
-  alt: 'My avatar'
+  alt: 'Profile pic'
 ---
 
-Gracias por leer.
+Thanks for reading :3
