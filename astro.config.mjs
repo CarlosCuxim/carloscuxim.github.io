@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap'
 import mdx from '@astrojs/mdx'
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import expressiveCode from 'astro-expressive-code'
+import astroExpressiveCode from 'astro-expressive-code'
 import siteConfig from './src/site.config'
 import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
 import remarkDescription from './src/plugins/remark-description' /* Add description to frontmatter */
@@ -73,8 +73,11 @@ export default defineConfig({
   },
   integrations: [
     sitemap(),
-    expressiveCode({
+    astroExpressiveCode({
       themes: siteConfig.themes.include,
+      styleOverrides: {
+        codeFontFamily: "'JetBrains Mono Variable', Consolas, monospace",
+      },
       useDarkModeMediaQuery: false,
       defaultProps: {
         showLineNumbers: false,
