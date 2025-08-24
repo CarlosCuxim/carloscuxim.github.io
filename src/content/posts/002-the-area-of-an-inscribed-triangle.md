@@ -4,6 +4,7 @@ published: 2025-08-19
 draft: true
 description: 'Various calculations to obtain a formula to get the area if an inscribed triangle'
 tags: ['math']
+toc: true
 ---
 
 Some days ago, a friend presented me a problem: If you have a circle of radius
@@ -41,3 +42,7 @@ ABC$:
    vectors is congruent of the triangle $\triangle ABC$.
 2. If $O$ is the origin $(0,0)$, then calculate the area of the triangles
    $\triangle AOB$, $\triangle BOC$ and $\triangle AOC$.
+
+## The area of the parallelogram defined by two vectors
+
+Suppose that we have two vectors $u$ and $v$
