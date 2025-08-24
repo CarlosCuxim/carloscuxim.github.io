@@ -1,7 +1,7 @@
 ---
 title: 'The area of an inscribed triangle'
 published: 2025-08-19
-draft: true
+draft: false
 description: 'Various calculations to obtain a formula to get the area if an inscribed triangle'
 tags: ['math']
 toc: true
