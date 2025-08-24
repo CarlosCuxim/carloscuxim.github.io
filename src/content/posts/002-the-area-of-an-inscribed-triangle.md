@@ -18,16 +18,16 @@ me that probably is the quadrilateral triangle, but in math intuition is not
 enough, it's necessary a proof.
 
 To attack the problem, I decided to take some suppositions. First, the circle
-will be of radius $1$. Second the triangle will have three vertices, $A$, $B$
+will be of radius $$. Second the triangle will have three vertices, $A$, $B$
 and $C$, that lies in the circle.Third $C$ will be the point $(-1,0)$ and last
 I will express $A$ and $B$ with polar coordinates, as follows:
 
 $$
-  A = (1; \alpha),
-  \qquad
-  B = (1; \beta),
-  \quad
-  -\pi < \beta < \alpha < \pi.
+A = (1; \alpha),
+\qquad
+B = (1; \beta),
+\quad
+-\pi < \beta < \alpha < \pi.
 $$
 
 The first thought I had was: How I can get the area of the triangle? Well, this
@@ -45,4 +45,11 @@ ABC$:
 
 ## The area of the parallelogram defined by two vectors
 
-Suppose that we have two vectors $u$ and $v$
+Suppose that we have two vectors $\gdef\u{\bec u}\u$ and $\gdef\v{\bec v}\v$,
+together with the origin and the vector $\u + \v$ form a parallelogram. If
+$\theta$ is the angle defined by $\u$ and $\v$ a easy way to calculate the
+area $A_{\u\v}$ of the parallelogram defined by $\u$ and $\v$ is
+
+$$
+A_{\u\v}= \norm{\u} \norm{\v} \sin\theta.
+$$

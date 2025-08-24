@@ -59,9 +59,9 @@ body {
 }
 
 /* hide katex-html */
-.katex-html {
-  @apply hidden;
-}
+/* .katex-html { */
+/*   @apply hidden; */
+/* } */
 
 input:focus-visible,
 textarea:focus-visible,
@@ -333,7 +333,7 @@ article img {
   }
 
   ul li {
-    list-style-type: "-";
+    list-style-type: '-';
   }
 
   ol li {

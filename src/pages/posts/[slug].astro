@@ -32,6 +32,7 @@ export const getStaticPaths = (async () => {
 const { post, prev, next } = Astro.props
 const postData = post.data
 const { headings, Content: PostContent } = await render(post)
+
 const addendum = await getCollection('addendum')
 let AddendumContent
 let addendumAvatarImage
