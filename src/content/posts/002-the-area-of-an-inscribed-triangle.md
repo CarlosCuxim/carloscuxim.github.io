@@ -45,7 +45,7 @@ ABC$:
 
 ## The area of the parallelogram defined by two vectors
 
-Suppose that we have two vectors $\gdef\u{\bec u}\u$ and $\gdef\v{\bec v}\v$,
+Suppose that we have two vectors $\gdef\u{\bec u} \u$ and $\gdef\v{\bec v} \v$,
 together with the origin and the vector $\u + \v$ form a parallelogram. If
 $\theta$ is the angle defined by $\u$ and $\v$ a easy way to calculate the
 area $A_{\u\v}$ of the parallelogram defined by $\u$ and $\v$ is
@@ -53,3 +53,35 @@ area $A_{\u\v}$ of the parallelogram defined by $\u$ and $\v$ is
 $$
 A_{\u\v}= \norm{\u} \norm{\v} \sin\theta.
 $$
+
+The proof of this property is simple, the formula for the area of a
+parallelogram it's just base times height. We can use any vector as the base,
+and for the height, we can just use trigonometry and it will be the other
+vector times the sine of the angle between the vectors.
+
+It's possible to calculate $\sin\theta$ in terms of $\u$ and $\v$. To do this,
+first, it's easies to calculate $A_{\u\v}^2$, because we can convert
+$\sin^2\theta = 1 - \cos^2\theta$. This way we got the next formula:
+
+$$
+  A_{\u\v} = \norm{\u}^2 \norm{\v^2} (1 - \cos^2\theta)
+$$
+
+It might looks worse than the last formula, the change of sine to cosine makes
+the formula more easiest, just because if we use the cosine law we got the next formula
+
+$$
+\cos\theta = \frac{\u\cdot\v}{\norm{\u}\norm{\v}}.
+$$
+
+This way, if we join both formulas, we finally got a really easy way of
+calculate the area of the parallelogram defined by $\u$ and $\v$:
+
+$$
+A_{\u\v}^2 = \norm{\u}^2 \norm{v}^2 - (u\cdot v)^2.
+$$
+
+Some people may look this formula familiar. And that's because is related to
+the Cauchy-Swartz inequality. Indeed this is a nice proof of the Cauchy-Swartz
+inequality, if we asume that we are in a Euclidean space (since we use terms
+like area or angle between two vectors).
